@@ -20,11 +20,13 @@ A interface foi pensada para ser simples e intuitiva, oferecendo campos de busca
 
 ## Print da versão responsiva com Bootstrap [DESKTOP]
 
-<<  COLOQUE A IMAGEM AQUI >>
+![Captura 1](img/captura-1.jpg)
+![Captura 2](img/captura-2.jpg)
 
 ## Print da versão responsiva com Bootstrap [MOBILE] (*)
 
-<<  COLOQUE A IMAGEM AQUI >>
+![Captura 1](img/captura-1-mobile.jpg)
+![Captura 2](img/captura-2-mobile.jpg)
 
 
 (*) Utilize as ferramentas do desenvolvedor do seu navegador para colocar no modo reponsivo, escolha um celular qualquer e recarregue a página antes de tirar o print. 

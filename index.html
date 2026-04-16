@@ -1,163 +1,179 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/responsive.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <title>Sistema de Gestão de Autores e Livros</title>
 </head>
 <body>
-    <header class="header-principal">
-        <div class="home">
-            <img id="icon-casinha" src="img/icon-casinha.jpg" alt="ícone da casinha(aponta sempre para a home page)">
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-info fixed-top">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+        <img src="img/icon-casinha.jpg" width="30">
+        </a>
+
+        <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse justify-content-end" id="menu">
+        <ul class="navbar-nav">
+            <li class="nav-item"><a class="nav-link" href="#">Autores</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Livros</a></li>
+            <li class="nav-item">
+            <img src="img/icon-sol.jpg" width="30">
+            </li>
+        </ul>
         </div>
-        <nav>
-            <a href="">Autores</a>
-            <a href="">Livros</a>
-            <span><img id="icon" src="img/icon-sol.jpg" alt="Ícone para definir o modo de tela"></span>
-        </nav>
-    </header>
+    </div>
+    </nav>
 
-    <main>
-        <section class="autores-mais-recentes">
-            <div class="titulo-e-inputs">
-                <div class="titulo-autores">
-                    <h2>Autores mais recentes</h2>
-                </div>
-                <div class="pesquisa-autor">
-                    <label for="input-autor"></label>
-                    <input class="input-autor" type="text" placeholder="Digite um autor">
+    <main class="container" style="margin-top: 80px;">
 
-                    <label for="input-categoria"></label>
-                    <select class="input-categoria">
-                        <option value="Selecione">Selecione</option>
-                        <option value="Comedia">Comédia</option>
-                        <option value="Drama">Drama</option>
-                    </select>
+    <section class="mb-5">
+        <div class="d-flex flex-column flex-md-row justify-content-between align-items-md-center mb-3">
+        <h2>Autores mais recentes</h2>
 
-                    <button><img class="icon-pesquisa" src="img/icon-pesquisa.jpg" alt="Ícone de pesquisa"></button>
-                </div>
-            </div>    
-                
-            <div class="autores">
-                <article>
-                    <div class="img">
-                        <img src="https://picsum.photos/200/200" alt="Autor">
-                    </div>
-                    <div class="txt">
-                        <span class="nome-autor">Olavo Bilac</span>
-                        <span class="tempo-insercao">1 mês atrás</span>
-                    </div>
-                    
-                </article>
-                <article>
-                    <div class="img">
-                        <img src="https://picsum.photos/200/200" alt="Autor">
-                    </div>
-                    <div class="txt">
-                        <span class="nome-autor">Machado de Assis</span>
-                        <span class="tempo-insercao">1 mês atrás</span>
-                    </div>
-                    
-                </article>
-                <article>
-                    <div class="img">
-                        <img src="https://picsum.photos/200/200" alt="Autor">
-                    </div>
-                    <div class="txt">
-                        <span class="nome-autor">Mário Quintana</span>
-                        <span class="tempo-insercao">1 mês atrás</span>
-                    </div>
-                    
-                </article>
-                <article>
-                    <div class="img">
-                        <img src="https://picsum.photos/200/200" alt="Autor">
-                    </div>
-                    <div class="txt">
-                        <span class="nome-autor">Adélia Prado</span>
-                        <span class="tempo-insercao">1 mês atrás</span>
-                    </div>
-                    
-                </article>
+        <div class="d-flex flex-wrap gap-2 align-items-center">
+            <input type="text" class="form-control w-50" placeholder="Digite um autor">
+
+            <select class="form-select w-25">
+            <option>Selecione</option>
+            <option>Comédia</option>
+            <option>Drama</option>
+            </select>
+
+            <button class="btn btn-light">
+            🔍
+            </button>
+        </div>
+        </div>
+
+        <div class="row g-3">
+        <div class="col-12 col-md-6 col-lg-3">
+            <div class="card text-center">
+            <img src="https://picsum.photos/200" class="card-img-top">
+            <div class="card-body">
+                <h6 class="card-title">Olavo Bilac</h6>
+                <small class="text-muted">1 mês atrás</small>
             </div>
-        </section>
-
-        <section class="linha-separar"></section>
-
-        <section class="livros-mais-recentes">
-            <div class="titulo-e-inputs">
-                <div class="titulo-livros">
-                    <h2>Livros mais recentes</h2>
-                </div>
-                <div class="pesquisa-livros">
-                    <label for="input-livro"></label>
-                    <input class="input-livro" type="text" placeholder="Digite um livro">
-
-                    <label for="input-categoria"></label>
-                    <select class="input-categoria">
-                        <option value="Selecione">Selecione</option>
-                        <option value="Comedia">Comédia</option>
-                        <option value="Drama">Drama</option>
-                    </select>
-
-                    <button><img class="icon-pesquisa" src="img/icon-pesquisa.jpg" alt="Ícone de pesquisa"></button>
-                </div>
             </div>
-                
-            <div class="livros">
-                <article>
-                    <div class="img">
-                        <img src="https://picsum.photos/200/200" alt="Autor">
-                    </div>
-                    <div class="txt">
-                        <span class="nome-livro">O Cortiço</span>
-                        <span class="tempo-insercao">1 mês atrás</span>
-                    </div>
-                    
-                </article>
-                <article>
-                    <div class="img">
-                        <img src="https://picsum.photos/200/200" alt="Autor">
-                    </div>
-                    <div class="txt">
-                        <span class="nome-livro">150 Melhores Poemas</span>
-                        <span class="tempo-insercao">1 mês atrás</span>
-                    </div>
-                    
-                </article>
-                <article>
-                    <div class="img">
-                        <img src="https://picsum.photos/200/200" alt="Autor">
-                    </div>
-                    <div class="txt">
-                        <span class="nome-livro">Clara dos Anjos</span>
-                        <span class="tempo-insercao">1 mês atrás</span>
-                    </div>
-                    
-                </article>
-                <article>
-                    <div class="img">
-                        <img src="https://picsum.photos/200/200" alt="Autor">
-                    </div>
-                    <div class="txt">
-                        <span class="nome-livro">A Escrava Isaura</span>
-                        <span class="tempo-insercao">1 mês atrás</span>
-                    </div>
-                    
-                </article>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-3">
+            <div class="card text-center">
+            <img src="https://picsum.photos/200" class="card-img-top">
+            <div class="card-body">
+                <h6 class="card-title">Machado de Assis</h6>
+                <small class="text-muted">1 mês atrás</small>
             </div>
-        </section>
+            </div>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-3">
+            <div class="card text-center">
+            <img src="https://picsum.photos/200" class="card-img-top">
+            <div class="card-body">
+                <h6 class="card-title">Mário Quintana</h6>
+                <small class="text-muted">1 mês atrás</small>
+            </div>
+            </div>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-3">
+            <div class="card text-center">
+            <img src="https://picsum.photos/200" class="card-img-top">
+            <div class="card-body">
+                <h6 class="card-title">Adélia Prado</h6>
+                <small class="text-muted">1 mês atrás</small>
+            </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <hr>
+
+    <section>
+        <div class="d-flex flex-column flex-md-row gap-2 align-items-md-center">
+        <h2>Livros mais recentes</h2>
+
+        <div class="d-flex gap-2 align-items-center">
+            <input type="text" class="form-control w-50" placeholder="Digite um livro">
+
+            <select class="form-select w-25">
+            <option>Selecione</option>
+            <option>Comédia</option>
+            <option>Drama</option>
+            </select>
+
+            <button class="btn btn-light">
+            🔍
+            </button>
+        </div>
+        </div>
+
+        <div class="row g-3">
+        <div class="col-12 col-md-6 col-lg-3">
+            <div class="card text-center">
+            <img src="https://picsum.photos/200" class="card-img-top">
+            <div class="card-body">
+                <h6 class="card-title">O Cortiço</h6>
+                <small class="text-muted">1 mês atrás</small>
+            </div>
+            </div>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-3">
+            <div class="card text-center">
+            <img src="https://picsum.photos/200" class="card-img-top">
+            <div class="card-body">
+                <h6 class="card-title">150 Melhores Poemas</h6>
+                <small class="text-muted">1 mês atrás</small>
+            </div>
+            </div>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-3">
+            <div class="card text-center">
+            <img src="https://picsum.photos/200" class="card-img-top">
+            <div class="card-body">
+                <h6 class="card-title">Clara dos Anjos</h6>
+                <small class="text-muted">1 mês atrás</small>
+            </div>
+            </div>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-3">
+            <div class="card text-center">
+            <img src="https://picsum.photos/200" class="card-img-top">
+            <div class="card-body">
+                <h6 class="card-title">A Escrava Isaura</h6>
+                <small class="text-muted">1 mês atrás</small>
+            </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
     </main>
-    <footer>
-        <div class="txt-direitos">
-            © 2026 | Todos os direitos reservados
+
+    <footer class="bg-primary text-dark mt-5 py-3">
+    <div class="container d-flex flex-column flex-md-row justify-content-between text-center">
+        <span>© 2026 | Todos os direitos reservados</span>
+
+        <div>
+        <a href="#" class="text-dark me-3">Gmail</a>
+        <a href="#" class="text-dark">GitHub</a>
         </div>
-        <div class="links">
-            <a href="https://mail.google.com/mail/?view=cm&to=rafavilaca13@gmail.com" target="_blank">Gmail</a>
-            <a href="https://github.com/rafaqueiroz10">GitHub</a>
-        </div>
+    </div>
     </footer>
+
+    <!-- JS Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
 </body>
 </html>
