@@ -10,10 +10,13 @@ No trabalho dessa semana vamos alterar o projeto para que a responsividade da ho
 
 ## Informações Gerais
 
-- Nome:
-- Matricula:
-- Proposta de projeto escolhida:
+- Nome: Rafael Queiroz Vilaça
+- Matricula: 928776
+- Proposta de projeto escolhida: Autores e livros
 - Breve descrição sobre seu projeto:
+O Sistema de Gestão de Autores e Livros é uma aplicação web desenvolvida para organizar e gerenciar informações sobre autores e suas obras literárias. O sistema permite cadastrar, visualizar e pesquisar autores e livros, facilitando o acesso a dados como nome, categoria e publicações mais recentes.
+
+A interface foi pensada para ser simples e intuitiva, oferecendo campos de busca e filtros que ajudam o usuário a encontrar rapidamente as informações desejadas. Além disso, o sistema pode ser utilizado como base para projetos maiores, podendo futuramente incluir funcionalidades como edição, exclusão de registros e integração com banco de dados.
 
 ## Print da versão responsiva com Bootstrap [DESKTOP]
 

@@ -1,0 +1,91 @@
+@media (max-width: 768px) {
+    .header-principal {
+        flex-direction: row;
+        align-items: center;
+        gap: 10px;
+        padding: 0px 0;
+        z-index: 1;
+    }
+
+    .header-principal nav {
+        width: 100%;
+        justify-content: flex-end;
+    }
+
+    .titulo-e-inputs {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .pesquisa-autor, 
+    .pesquisa-livros {
+        width: 100%;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .input-autor, 
+    .input-livro {
+        width: 100%;
+    }
+
+    .input-categoria {
+        width: 100%;
+    }
+
+    .pesquisa-autor button, 
+    .pesquisa-livros button {
+        width: 100%;
+    }
+
+    .autores,
+    .livros {
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: center;
+    }
+
+    .autores article,
+    .livros article {
+        width: 45%;
+    }
+
+    .img img {
+        width: 100%;
+        height: auto;
+    }
+
+    footer {
+        flex-direction: column;
+        height: auto;
+        gap: 10px;
+        margin-top: 25px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        text-align: center;
+    }
+
+    footer .links {
+        width: 100%;
+        justify-content: center;
+        margin: 0;
+    }
+}
+
+@media (max-width: 375px) {
+    .autores article,
+    .livros article {
+        width: 100%;
+    }
+
+    .header-principal nav {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .titulo-autores h2,
+    .titulo-livros h2 {
+        font-size: 18px;
+    }
+}
