@@ -12,7 +12,7 @@ No trabalho dessa semana vamos alterar o projeto para que a responsividade da ho
 
 - Nome: Rafael Queiroz Vilaça
 - Matricula: 928776
-- Proposta de projeto escolhida: Autores e livros
+- Proposta de projeto escolhida: Autores e livros 
 - Breve descrição sobre seu projeto:
 O Sistema de Gestão de Autores e Livros é uma aplicação web desenvolvida para organizar e gerenciar informações sobre autores e suas obras literárias. O sistema permite cadastrar, visualizar e pesquisar autores e livros, facilitando o acesso a dados como nome, categoria e publicações mais recentes.
 
